@@ -10,6 +10,8 @@ body {
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-size: 14px;
+  background-color: #e5e7eb;
+  color: #444;
 }
 
 a {
@@ -18,26 +20,48 @@ a {
 }
 
 .activeLink {
-  color: rgb(161, 17, 197);
+  color: #facc15;
+  background-color: #facc1517;
 }
 
 ul {
-  background-color: #efefef;
+  max-width: 1280px;
+  width: 1200px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  height: 60px;
+  padding: 0 6px;
 }
 
-ul li {
-  margin-left: 20px;
+nav {
+  background-color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-image: url(./../public/confetti.svg);
+  background-size: auto;
+  background-repeat: repeat;
+  box-shadow: 0 1px 5px 0 rgb(74 74 74 / 20%), 0 2px 2px 0 rgb(74 74 74 / 10%),
+    0 3px 1px -2px rgb(74 74 74 / 10%);
+}
+
+ul li a {
+  padding: 15px;
+  border-radius: 5px;
+  color: #ccc;
+}
+
+ul li a:hover {
+  color: #facc15;
 }
 
 footer {
-  background-color: rgb(226, 221, 221);
-  position: fixed;
-  bottom: 0;
+  background-color: rgb(74 74 74);
   width: 100%;
+  height: 200px;
+  background-image: url(./../public/confetti.svg);
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 .aside {
@@ -48,10 +72,27 @@ footer {
   color: rgb(81, 81, 245);
 }
 
-/* .datat {
+.wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
   width: 100%;
-  margin-left: -15px;
-  margin-right: -15px;
-} */
+  min-height: 67.8vh;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  max-width: 1280px;
+  align-items: center;
+  padding: 0 6px;
+}
+
+.card {
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}

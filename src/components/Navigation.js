@@ -12,7 +12,7 @@ const Navigation = () => {
       <ul>
         {items.map((item) => {
           return (
-            <li key={item.to}>
+            <li key={item.to} className={item.isActive ? "liactive" : ""}>
               <NavLink
                 to={item.to}
                 className={(navData) => (navData.isActive ? "activeLink" : "")}
