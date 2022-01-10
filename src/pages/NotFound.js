@@ -1,7 +1,7 @@
 const NotFound = () => {
   return (
     <div className="card">
-      <p>404</p>
+      <p>404 Not Found!</p>
     </div>
   );
 };

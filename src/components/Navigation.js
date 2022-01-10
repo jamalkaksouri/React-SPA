@@ -4,6 +4,8 @@ const items = [
   { name: "Home", to: "/", exact: "true" },
   { name: "AboutUs", to: "/about-us" },
   { name: "Profile", to: "/profile" },
+  { name: "Blogs", to: "/blogs" },
+  { name: "Products", to: "/products" },
 ];
 
 const Navigation = () => {
@@ -12,7 +14,7 @@ const Navigation = () => {
       <ul>
         {items.map((item) => {
           return (
-            <li key={item.to} className={item.isActive ? "liactive" : ""}>
+            <li key={item.to}>
               <NavLink
                 to={item.to}
                 className={(navData) => (navData.isActive ? "activeLink" : "")}

@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <div className="card">
-      <p>اینجا صفحه درباره ما است</p>
+      <p>This is about-us page</p>
     </div>
   );
 };

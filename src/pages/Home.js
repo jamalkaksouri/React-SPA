@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div className="card">
-      <p>اینجا صفحه خانه است</p>
+      <p>This is home page</p>
     </div>
   );
 }
