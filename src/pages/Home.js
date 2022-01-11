@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="card">
+    <div className="notfound">
       <p>This is home page</p>
     </div>
   );

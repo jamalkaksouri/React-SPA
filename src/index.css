@@ -33,7 +33,7 @@ ul {
 }
 
 nav {
-  background-color: #4a4a4a;
+  background-color: #25242a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@ ul li a:hover {
 }
 
 footer {
-  background-color: rgb(74 74 74);
+  background-color: #25242a;
   width: 100%;
   height: 200px;
   background-image: url(./../public/confetti.svg);
@@ -97,12 +97,65 @@ footer {
     rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }
 
+.notfound {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  width: 100%;
+  height: 64vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 .liLink {
   color: rgb(37, 147, 161);
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .backlink {
   color: rgb(161, 37, 37);
   font-size: 15px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 60px;
+  border: 1px solid #6f767c;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: white;
+  background-color: #6f767c;
+}
+
+.notfound {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_back {
+  position: absolute;
+  top: 177px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  right: 415.6px;
+  animation: pulse 160ms cubic-bezier(1, 0.74, 0.59, 1.43) infinite;
+  background-color: #ff98004d;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: #ffc10794 0 0 0 0;
+  }
+  80% {
+    box-shadow: #ff980014 0 0 0 20px;
+  }
+  100% {
+    box-shadow: #ff980000 0 0 0 40px;
+  }
 }

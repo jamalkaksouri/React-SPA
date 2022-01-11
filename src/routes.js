@@ -1,4 +1,5 @@
 import Blog from "./components/Blog";
+import Post from "./components/Post";
 import Product from "./components/Product";
 import AboutUs from "./pages/AboutUs";
 import Blogs from "./pages/Blogs";
@@ -14,7 +15,9 @@ const routes = [
   { path: "/profile", element: <Profile /> },
   { path: "/blogs", element: <Blogs /> },
   { path: "/products", element: <Products /> },
-  { path: "/", element: <Home />, exact: true },
+  { path: "/post", element: <Post /> },
+  { path: "/post/:id", element: <Post /> },
+  { path: "/", element: <Home /> },
   { path: "*", element: <NotFound /> },
 ];
 

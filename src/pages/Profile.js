@@ -1,6 +1,6 @@
 const Profile = () => {
   return (
-    <div className="card">
+    <div className="notfound">
       <p>This is profile page</p>
     </div>
   );

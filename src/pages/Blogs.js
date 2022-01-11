@@ -9,7 +9,7 @@ const items = [
 
 const Blogs = () => {
   return (
-    <div className="card">
+    <div className="notfound">
       <h2>Blog List</h2>
       {items.map((item) => {
         return (

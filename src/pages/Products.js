@@ -9,7 +9,7 @@ const items = [
 
 const Products = () => {
   return (
-    <div className="card">
+    <div className="notfound">
       <h2>Product List</h2>
       {items.map((item) => {
         return (
