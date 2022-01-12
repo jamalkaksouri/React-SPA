@@ -6,13 +6,13 @@ import Blogs from "./pages/Blogs";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
-import Profile from "./pages/Profile";
+import Profile from "./components/Profile";
 
 const routes = [
   { path: "/blogs/:id", element: <Blog /> },
   { path: "/products/:id", element: <Product /> },
   { path: "/about-us", element: <AboutUs /> },
-  { path: "/profile", element: <Profile /> },
+  { path: "/profile/*", element: <Profile /> },
   { path: "/blogs", element: <Blogs /> },
   { path: "/products", element: <Products /> },
   { path: "/post", element: <Post /> },

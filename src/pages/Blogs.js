@@ -15,7 +15,10 @@ const Blogs = () => {
         return (
           <li key={item.to}>
             <abbr title={`Go to page ${item.name}`}>
-              <Link className="liLink" to={item.to}>
+              <Link
+                className="liLink"
+                to={{ pathname: item.to, search: "sort=name" }}
+              >
                 {item.name}
               </Link>
             </abbr>
