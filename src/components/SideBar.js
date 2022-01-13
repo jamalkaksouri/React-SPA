@@ -11,7 +11,7 @@ const SideBar = () => {
       <ul>
         {items.map((tab) => {
           return (
-            <li className="nested">
+            <li key={tab.to} className="nested">
               <NavLink
                 to={tab.to}
                 className={(tabLink) => (tabLink.isActive ? "activeTab" : "")}

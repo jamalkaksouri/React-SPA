@@ -184,3 +184,8 @@ aside {
   padding-bottom: 4px;
   border-radius: 0;
 }
+
+.browserView {
+  font-size: 20px;
+  color: #facc15;
+}
