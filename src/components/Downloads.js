@@ -20,7 +20,7 @@ const Downloads = () => {
   return (
     <>
       <BrowserView className="browserView">
-        <h1>This is rendered only in browser</h1>
+        <h1>This is rendered only in browser</h1>npm
       </BrowserView>
       <MobileView>
         <h1>This is rendered only on mobile</h1>
